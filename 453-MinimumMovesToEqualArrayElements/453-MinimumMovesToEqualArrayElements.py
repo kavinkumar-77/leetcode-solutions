@@ -1,0 +1,11 @@
+# Last updated: 7/14/2026, 1:54:25 PM
+class Solution:
+    def minMoves(self, nums: List[int]) -> int:
+        mn = min(nums)
+
+        moves = 0
+
+        for num in nums:
+            moves += num - mn
+
+        return moves
